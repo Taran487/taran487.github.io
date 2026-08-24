@@ -25,13 +25,6 @@ A modern, responsive, and fully dynamic developer portfolio built with **React (
 * **MongoDB & Mongoose**
 * **Multer** (File & Image Upload Middleware)
 * **Pug Template Engine** (Admin Dashboard)
-
----
-
-## 🌐 Live Demo & Architecture
-* **Frontend Portfolio:** [View Live Site](#) *(Add your Vercel/Netlify link here)*
-
-
 ---
 
 ## 📬 Contact
