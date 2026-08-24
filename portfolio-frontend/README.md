@@ -1,16 +1,39 @@
-# React + Vite
+# 🚀 Full-Stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and fully dynamic developer portfolio built with **React (Vite)** on the frontend and a custom **Node.js, Express, & MongoDB** backend admin system.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Features & Highlights
+* **Dynamic Content Management:** Features a custom-built admin dashboard powered by **Pug** and **Express** to manage projects, technical skills, and profile data dynamically.
+* **Image & File Uploads:** Integrated **Multer** middleware for uploading project screenshots, profile images, and resume PDFs securely to the backend.
+* **RESTful API Architecture:** Seamlessly fetches dynamic data from backend JSON endpoints to display live projects, skills, and bio info on the React frontend.
+* **Modern UI/UX:** Styled with clean CSS and Tailwind components, featuring a high-contrast theme optimized for accessibility and readability.
+* **Fully Responsive:** Designed to look stunning across desktop, tablet, and mobile devices.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
+* **React (Vite)**
+* **JavaScript (ES6+)**
+* **CSS3 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend & Database
+* **Node.js & Express.js**
+* **MongoDB & Mongoose**
+* **Multer** (File & Image Upload Middleware)
+* **Pug Template Engine** (Admin Dashboard)
+
+---
+
+## 🌐 Live Demo & Architecture
+* **Frontend Portfolio:** [View Live Site](#) *(Add your Vercel/Netlify link here)*
+
+
+---
+
+## 📬 Contact
+* **GitHub:** [Taran487](https://github.com/Taran487)
+* **Email:** taranp555@gmail.com
