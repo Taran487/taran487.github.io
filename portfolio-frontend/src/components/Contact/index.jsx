@@ -21,7 +21,7 @@ export default function Contact() {
                     </div>
                     <div className="contact-item">
                         <span className="contact-label">Linkdein:</span>
-                        <a href="https://www.linkedin.com/in/taranpreet-kaur-3b977b304/" target="_blank" rel="noreferrer" className="contact-value">github.com/taran487</a>
+                        <a href="https://www.linkedin.com/in/taranpreet-kaur-3b977b304/" target="_blank" rel="noreferrer" className="contact-value">https://www.linkedin.com/in/taranpreet-kaur-3b977b304/</a>
                     </div>
                 </div>
             </div>
