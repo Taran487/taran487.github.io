@@ -40,7 +40,7 @@ export default function Hero() {
             
             const link = document.createElement("a");
             link.href = blobUrl;
-            link.download = "resume.pdf"; // Name of the file saved to device folder
+            link.download = "Taranpreet_Kaur_Resume.pdf"; // Name of the file saved to device folder
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -68,34 +68,9 @@ export default function Hero() {
                         {profile?.bio || "Crafting robust backend architectures with Node.js & MongoDB, paired with high-performance responsive web applications."}
                     </p>
 
-                    {/* Attractive Action Buttons using inline/utility classes that won't break your layout */}
+                    
                     {resumeUrl && (
                         <div style={{ display: "flex", gap: "1rem", marginTop: "1.5rem", flexWrap: "wrap" }}>
-                            {/* View Button */}
-                            <a 
-                                href={resumeUrl} 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                style={{
-                                    display: "inline-flex",
-                                    alignItems: "center",
-                                    gap: "0.5rem",
-                                    padding: "0.75rem 1.5rem",
-                                    borderRadius: "0.75rem",
-                                    fontWeight: "500",
-                                    color: "#ffffff",
-                                    background: "linear-gradient(to right, #4f46e5, #7c3aed)",
-                                    boxShadow: "0 10px 15px -3px rgba(79, 70, 229, 0.3)",
-                                    textDecoration: "none",
-                                    transition: "all 0.2s ease"
-                                }}
-                            >
-                                <svg style={{ width: "1.25rem", height: "1.25rem" }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                                </svg>
-                                View Resume
-                            </a>
                             
                             {/* Download Button */}
                             <a 
