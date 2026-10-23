@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer className="portfolio-footer">
-            <p>© {new Date().getFullYear()} • Built with React, Node.js & MongoDB.</p>
+            <p>© {new Date().getFullYear()} 2026 Taranpreet Kaur. All rights reserved.</p>
         </footer>
     );
 }
