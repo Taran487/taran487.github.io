@@ -52,6 +52,37 @@ export default function Hero() {
         }
     };
 
+
+    // Shared button styles
+    const baseButton = {
+        display: "inline-flex",
+        alignItems: "center",
+        gap: "0.5rem",
+        padding: "0.75rem 1.5rem",
+        borderRadius: "0.75rem",
+        fontWeight: "500",
+        textDecoration: "none",
+        cursor: "pointer",
+        transition: "all 0.2s ease",
+    };
+
+    // Primary: View My Work 
+    const primaryButton = {
+        ...baseButton,
+        color: "#4f46e5",
+        background: "#ffffff",
+        border: "2px solid #4f46e5",
+        boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.05)",
+    };
+
+    // Secondary: Download Resume 
+    const secondaryButton = {
+        ...baseButton,
+        color: "#c4b5fd",
+        background: "transparent",
+        border: "2px solid rgba(167, 139, 250, 0.4)",
+    };
+
     return (
         <section className="hero-section">
             <div className="hero-container">
@@ -72,31 +103,21 @@ export default function Hero() {
                     {resumeUrl && (
                         <div style={{ display: "flex", gap: "1rem", marginTop: "1.5rem", flexWrap: "wrap" }}>
                             
-                            {/* Download Button */}
-                            <a 
-                                href={resumeUrl} 
-                                onClick={handleDownload}
-                                style={{
-                                    display: "inline-flex",
-                                    alignItems: "center",
-                                    gap: "0.5rem",
-                                    padding: "0.75rem 1.5rem",
-                                    borderRadius: "0.75rem",
-                                    fontWeight: "500",
-                                    color: "#4f46e5",
-                                    background: "#ffffff",
-                                    border: "2px solid #4f46e5",
-                                    boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.05)",
-                                    textDecoration: "none",
-                                    cursor: "pointer",
-                                    transition: "all 0.2s ease"
-                                }}
-                            >
+                            {/* Primary CTA*/}
+                        <a href="#projects" style={primaryButton}>
+                            View My Work
+                        </a>
+
+                        {/* Secondary: Download Resume */}
+                        {resumeUrl && (
+                            <a href={resumeUrl} onClick={handleDownload} style={secondaryButton}>
                                 <svg style={{ width: "1.25rem", height: "1.25rem" }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                                 </svg>
                                 Download Resume
                             </a>
+                        )}
+
 
                         </div>
                     )}
