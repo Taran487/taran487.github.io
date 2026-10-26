@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 
-<FaGithub size={20} aria-hidden="true" />
-
 export default function Projects() {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -89,7 +87,7 @@ export default function Projects() {
                                                                 className="btn btn-github"
                                                                 aria-label={`View ${project.title} code on GitHub`}>
                                                                 <FaGithub size={20} aria-hidden="true" />
-                                                                
+
                                                                 View Code
                                                             </a>
                                                         )}
