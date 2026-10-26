@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import { FaGithub } from "react-icons/fa";
+
+<FaGithub size={20} aria-hidden="true" />
 
 export default function Projects() {
     const [projects, setProjects] = useState([]);
@@ -80,10 +83,16 @@ export default function Projects() {
                                     </a>
                                 )}
                                 {project.githubUrl && (
-                                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
-                                        GitHub
-                                    </a>
-                                )}
+                                                            <a href={project.githubUrl}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="btn btn-github"
+                                                                aria-label={`View ${project.title} code on GitHub`}>
+                                                                <FaGithub size={20} aria-hidden="true" />
+                                                                
+                                                                View Code
+                                                            </a>
+                                                        )}
                             </div>
                         </div>
                     );

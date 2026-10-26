@@ -398,6 +398,20 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid #a78bfa;
+  font-weight: 600;
+}
+
+.btn-github:hover {
+  background: rgba(167, 139, 250, 0.25);
+  border-color: #c4b5fd;
+}
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .cards-grid {
